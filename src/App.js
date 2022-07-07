@@ -4,7 +4,6 @@ import TodoList from './components/TodoList';
 import Filters from './components/Filters';
 
 const { Title } = Typography;
-console.log('tien');
 
 function App() {
   return (
