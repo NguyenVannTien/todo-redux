@@ -12,7 +12,6 @@ export default function TodoList() {
   const [priority, setPriority] = useState("Medium");
 
   const dispatch = useDispatch();
-
   const todoList = useSelector(todosRemainingSelector);
   console.log('todolist:', todoList);
 
@@ -30,8 +29,7 @@ export default function TodoList() {
   };
 
   const handleInputChange = (e) => {
-    const value = e.target.value;
-    setTodoName(value);
+    setTodoName(e.target.value);
   };
 
   const handleChangePriority = (value) => {
